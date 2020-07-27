@@ -10,7 +10,7 @@
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap" rel="stylesheet">
     <!-- BOOTSTRAP STYLES -->
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- CUSTOM STYLES CALLED IN AFTER BOOTSTRAP-->
     <link rel="stylesheet" href="main.css">
 </head>
@@ -18,26 +18,30 @@
 <body>
     <!-- Start of header -->
     <header>
-        <nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-green dark-green-border">
             <!-- clickable link that takes you back to home page -->
-            <a href="index.html">
+            <a href="index.html" class="navbar-brand">
                 <!-- <h1> tag for name-->
-                <h1>Your Name</h1>
+                <h1 class="text-white">Marc</h1>
                 <!-- <h2> tag for name-->
-                <h2>Your Title</h2>
+                <h2 class="text-white">Full Stack Web Developer</h2>
             </a>
 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
             <!-- nav items -->
-            <div>
-                <ul>
-                    <li>
-                        <a href="index.html">Porfolio</a>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link text-white">Portfolio</a>
                     </li>
-                    <li>
-                        <a href="about.html">About</a>
+                    <li class="nav item">
+                        <a href="about.html" class="nav-link active">About</a>
                     </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link text-white">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -46,33 +50,44 @@
     <!-- End of header -->
 
     <!-- Begin main content -->
+    <div class="container mt-5 mb-5">
+        <!-- left side -->
+        <div class="row">
+            <div class="col-6">
+                <!-- image -->
+                <img src="img/marc.jpeg" class="img-fluid">
+            </div>
+            <!-- right side -->
+            <div class="col-6 my-auto">
+                <!-- title -->
+                <h3 class="text-secondary mb-4 text-center">About</h3>
+                <!-- about paragraph -->
+                <p class="text-muted">Hello! This is my portfolio where I share all of my favorite work.</p>
+                <p class="text-muted">If you would like to follow me on Twitter my username is <a href="https://twitter.com" target="_blank" class="text-decoration-none">@username</a></p>
+            </div>
+        </div>
 
-    <!-- left side -->
-    <div>
-        <!-- image -->
-        <img src="#">
     </div>
-    <!-- right side -->
-    <div>
-        <!-- title -->
-        <h3>About</h3>
-        <!-- about paragraph -->
-        <p>Hello! This is my portfolio where I share all of my favorite work.</p>
-        <p>If you would like to follow me on Twitter my username is <a href="https://twitter.com" target="_blank">@username</a></p>
-    </div>
-
     <!-- End of main content -->
 
     <!-- Begin Full Width Sticky Footer -->
-    <a href="https://facebook.com">Facebook</a>
-    <a href="https://facebook.com">Twitter</a>
-    <p>&copy; 2020 Marc</p>
+    <div class="navbar fixed-bottom bg-light d-inline">
+        <div class="row justify-content-center">
+            <a href="https://facebook.com" class="pr-2 text-muted"><i data-feather="facebook"></i></a>
+            <a href="https://twitter.com" class="pl-2 text-muted"><i data-feather="twitter"></i></a>
+        </div>
+        <div class="row justify-content-center mt-2">
+            <p>&copy; 2020 Marc</p>
+        </div>
+    </div>
     <!-- End Footer -->
 
     <!-- BOOTSTRAP JS -->
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <!-- FEATHER ICONS -->
-
+    <script src="https://unpkg.com/feather-icons"></script>
     <!-- CUSTOM JS-->
     <script src="main.js"></script>
 </body>
