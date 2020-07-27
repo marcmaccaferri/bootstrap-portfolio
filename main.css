@@ -2,12 +2,68 @@
 GENERAL
 ****************/
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.75em;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: .75em;
+}
+
+h3 {
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+p {
+    font-weight: 200;
+}
+
+.contact-icon {
+    width: 30px;
+    height: 30px;
+}
 
 /****************
 COLORS
 ****************/
 
+.bg-green {
+    background-color: #6ab47b;
+}
+
+.dark-green-border {
+    border-bottom: solid 5px #599a68;
+}
+
+.active {
+    color: #32673f !important;
+}
+
+.nav-link:hover {
+    color: #32673f !important;
+}
+
+a,
+a:hover {
+    color: #6ab47b;
+}
+
 
 /****************
 MEDIA QUERIES
 ****************/
+
+@media screen and (min-width: 768px) {
+
+    .card-text {
+        font-size: .8rem;
+    }
+
+}
